@@ -1,0 +1,56 @@
+.header {
+    color: rgb(0, 128, 128);
+    position: relative;
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+
+    .header__icon {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+        @media (min-width: 700px) {
+            display: none;
+        }
+    }
+
+    .header__logo {
+        font-family: 'Audiowide', cursive;
+        font-size: 2rem;
+    }
+
+    .nav {
+
+        @media (max-width: 700px) {
+            display: none;
+        }
+
+        .nav__list {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            font-size: 1.3rem;
+
+            .nav__item {
+
+                :hover,
+                :focus,
+                :active {
+                    background-color: rgb(0, 128, 128);
+                    color: #fff;
+                }
+            }
+
+            .nav__link {
+                text-decoration: none;
+                padding: 0.5rem 2rem;
+                border-radius: 50px;
+            }
+        }
+    }
+}
