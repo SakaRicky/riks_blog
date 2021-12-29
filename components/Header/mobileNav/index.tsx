@@ -9,7 +9,7 @@ interface NavProp {
 
 export const MobileNav = ({showMenu, handleShowMenu}: NavProp) => {
 
-    const showMenuStyle = showMenu ? "translateX(0px)" : "translateX(-1000px)";
+    const showMenuStyle = showMenu ? "translateX(0px)" : "translateX(100%)";
 
     return (
         <div style={{transform: showMenuStyle}} className={styles.root}>

@@ -1,17 +1,21 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .main {
   min-height: 100vh;
   background-color: #eaeaea;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent; // remove blue-box-fill when clicking the buttons 
+
 }
 
 .footer {
+  background-color: rgb(0, 128, 128);
+  color: #eaeaea;
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
 }
