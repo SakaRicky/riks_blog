@@ -6,6 +6,7 @@
     max-width: 500px;
     margin: 2rem auto;
     height: 50vh;
+    transition: transform 500ms ease;
 
     @media screen and (min-width: 700px) {
         display: flex;
@@ -74,5 +75,6 @@
 
     &:hover {
         box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+        transform: scale(1.01);
     }
 }

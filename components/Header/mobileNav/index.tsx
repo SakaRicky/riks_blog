@@ -26,16 +26,16 @@ export const MobileNav = ({showMenu, handleShowMenu}: NavProp) => {
                         </Link>
                     </li>
                     <li className={styles.nav__item}  onClick={handleShowMenu}>
-                        <Link href="/">
+                        <Link href="/blog">
                             <a className={styles.nav__link} onClick={handleShowMenu}>
-                                About
+                                Blog
                             </a>
                         </Link>
                     </li>
                     <li className={styles.nav__item}>
-                        <Link href="/">
+                        <Link href="/projects">
                             <a className={styles.nav__link} onClick={handleShowMenu}>
-                                Articles
+                                Projects
                             </a>
                         </Link>
                     </li>

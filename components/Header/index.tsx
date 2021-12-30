@@ -13,9 +13,9 @@ export const Header = () => {
     return (
         <header className={styles.header}>
            <div  className={styles.container}>
-                <a href='#' className={styles.header__logo}>
-                    riks_blog
-                </a>
+                <Link href='/'>
+                    <a className={styles.header__logo}>riks_blog</a>
+                </Link>
 
                 <div className={styles.header__icon}>
                     <svg xmlns="http://www.w3.org/2000/svg" onClick={handleShowMenu} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -33,13 +33,13 @@ export const Header = () => {
                             </Link>
                         </li>
                         <li className={styles.nav__item}>
-                            <Link href="/">
-                                <a className={styles.nav__link}>About</a>
+                            <Link href="/blog">
+                                <a className={styles.nav__link}>Blog</a>
                             </Link>
                         </li>
                         <li className={styles.nav__item}>
-                            <Link href="/">
-                                <a className={styles.nav__link}>Articles</a>
+                            <Link href="/projects">
+                                <a className={styles.nav__link}>Projects</a>
                             </Link>
                         </li>
                     </ul>
